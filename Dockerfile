@@ -84,6 +84,6 @@ COPY . .
 RUN mkdir -p /var/log/supervisor
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-EXPOSE 7788 6080 5901 9222
+EXPOSE 7788
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
